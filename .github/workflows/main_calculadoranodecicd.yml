@@ -24,6 +24,7 @@ jobs:
       - name: Install dependencies and build React app
         run: |
           npm ci
+          npm run test
           npm run build
 
       - name: Upload build folder as artifact
@@ -48,5 +49,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'calculadoranodecicd'  # nombre exacto de tu App Service
-          package: './build'               # 👈 asegura que suba solo el contenido estático
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1DE2E89BA2EF4DB0AEC58754DB3D5DB3 }}
+          package: './build'               # 👈 asegura que suba solo el contenido estático
