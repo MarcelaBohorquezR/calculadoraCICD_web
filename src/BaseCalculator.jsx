@@ -74,8 +74,9 @@ export default function BaseCalculator() {
   return (
     <div style={{ maxWidth: 500, margin: "auto", padding: 20 }}>
       <h2>🧮 Calculadora de Bases Numéricas (2–10)</h2>
-      <h2>🧮 Angela Marcela Bohorquez - 20251695001</h2>
+      <h2>🧮 Marcela Bohorquez - 20251695001</h2>
       <h2>🧮 Maximiliano Valeta - 20251695010</h2>
+      <h2>🧮 Mike Cristhiam Forero - 20251695003</h2>
 
       <div style={{ display: "grid", gap: 10 }}>
         <label>
